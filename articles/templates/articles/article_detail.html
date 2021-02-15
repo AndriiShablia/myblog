@@ -1,0 +1,12 @@
+{% extends 'articles/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<a href="{% url 'articles:home'  %}">
+<button class="button" type='button'>Homepage</button>
+</a>
+<div class='detail'> <img src ="{{ article.image.url}}" width=350px; />
+    <p>{{ article.article }}</p>
+</div>
+{% endblock content %}

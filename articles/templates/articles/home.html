@@ -1,0 +1,15 @@
+{% extends 'articles/base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% for post in posts %}
+ <div class='block'> 
+  <h2><a href="{% url 'articles:detail' slug=post.slug %}">{{ post.city  }}</a> </h2>
+  <img src ="{{ post.image.url}}" width= 120px;>
+  <p>{{ post.snipet }}</p>
+
+ </div> 
+       
+{% endfor%}
+{% endblock content %}

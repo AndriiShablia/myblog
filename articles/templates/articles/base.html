@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title> Andrii Shablia </title>
+<link rel="stylesheet" href={% static 'styles.css' %}>
+</head>
+<body>
+<div class='flex-container'>
+<img src="{% static 'pic.jpg' %}" class="passe-partout" width=135px; />  
+	<div class='intro'> Greetings! This is my first Django project. In my blog you will find some facts about 
+cities which I visited. I'm pretty sure that some of you will be interesting to dive into Eastern and
+Central European climate and discover a new  places. During my life I was living in different locations and I'll share my experience with you. 
+Thanks for visiting my blog! 
+	</div>
+</div>  
+<div class="galery">
+{% block content %}
+{% endblock content %}
+</div>
+<footer class='footer'>
+	<p>Author: Andrii Shablia  </p>
+</footer>
+</body>
+</html>
